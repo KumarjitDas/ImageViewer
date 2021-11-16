@@ -1,6 +1,182 @@
 {
-    "list": [
-        "Light",
-        "Dark"
-    ]
+    "Light": {
+        "label": {
+            "background": "#ffffff",
+            "foreground": "#000000",
+            "disabled": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "highlight": "#0000ff"
+        },
+        "button": {
+            "background": "#ffffff",
+            "foreground": "#000000",
+            "clicked": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "disabled": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "highlight": "#0000ff"
+        },
+        "menubar": {
+            "bar": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            },
+            "menu": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "clicked": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            },
+            "submenu": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "clicked": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            }
+        },
+        "imageview": {
+            "background": "#ffffff",
+            "foreground": "#000000",
+            "disabled": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "highlight": "#0000ff"
+        },
+        "statusbar": {
+            "bar": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            },
+            "status": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            }
+        }
+    },
+    "Dark": {
+        "label": {
+            "background": "#ffffff",
+            "foreground": "#000000",
+            "disabled": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "highlight": "#0000ff"
+        },
+        "button": {
+            "background": "#ffffff",
+            "foreground": "#000000",
+            "clicked": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "disabled": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "highlight": "#0000ff"
+        },
+        "menubar": {
+            "bar": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            },
+            "menu": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "clicked": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            },
+            "submenu": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "clicked": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            }
+        },
+        "imageview": {
+            "background": "#ffffff",
+            "foreground": "#000000",
+            "disabled": {
+                "background": "#ffffff",
+                "foreground": "#000000"
+            },
+            "highlight": "#0000ff"
+        },
+        "statusbar": {
+            "bar": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            },
+            "status": {
+                "background": "#ffffff",
+                "foreground": "#000000",
+                "disabled": {
+                    "background": "#ffffff",
+                    "foreground": "#000000"
+                },
+                "highlight": "#0000ff"
+            }
+        }
+    }
 }
