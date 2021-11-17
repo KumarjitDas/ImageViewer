@@ -1,4 +1,5 @@
 {
+    "default": "Light",
     "Light": {
         "label": {
             "background": "#ffffff",
@@ -92,88 +93,88 @@
     "Dark": {
         "label": {
             "background": "#ffffff",
-            "foreground": "#000000",
+            "foreground": "#aaaaaa",
             "disabled": {
                 "background": "#ffffff",
-                "foreground": "#000000"
+                "foreground": "#aaaaaa"
             },
             "highlight": "#0000ff"
         },
         "button": {
             "background": "#ffffff",
-            "foreground": "#000000",
+            "foreground": "#aaaaaa",
             "clicked": {
                 "background": "#ffffff",
-                "foreground": "#000000"
+                "foreground": "#aaaaaa"
             },
             "disabled": {
                 "background": "#ffffff",
-                "foreground": "#000000"
+                "foreground": "#aaaaaa"
             },
             "highlight": "#0000ff"
         },
         "menubar": {
             "bar": {
                 "background": "#ffffff",
-                "foreground": "#000000",
+                "foreground": "#aaaaaa",
                 "disabled": {
                     "background": "#ffffff",
-                    "foreground": "#000000"
+                    "foreground": "#aaaaaa"
                 },
                 "highlight": "#0000ff"
             },
             "menu": {
                 "background": "#ffffff",
-                "foreground": "#000000",
+                "foreground": "#aaaaaa",
                 "clicked": {
                     "background": "#ffffff",
-                    "foreground": "#000000"
+                    "foreground": "#aaaaaa"
                 },
                 "disabled": {
                     "background": "#ffffff",
-                    "foreground": "#000000"
+                    "foreground": "#aaaaaa"
                 },
                 "highlight": "#0000ff"
             },
             "submenu": {
                 "background": "#ffffff",
-                "foreground": "#000000",
+                "foreground": "#aaaaaa",
                 "clicked": {
                     "background": "#ffffff",
-                    "foreground": "#000000"
+                    "foreground": "#aaaaaa"
                 },
                 "disabled": {
                     "background": "#ffffff",
-                    "foreground": "#000000"
+                    "foreground": "#aaaaaa"
                 },
                 "highlight": "#0000ff"
             }
         },
         "imageview": {
             "background": "#ffffff",
-            "foreground": "#000000",
+            "foreground": "#aaaaaa",
             "disabled": {
                 "background": "#ffffff",
-                "foreground": "#000000"
+                "foreground": "#aaaaaa"
             },
             "highlight": "#0000ff"
         },
         "statusbar": {
             "bar": {
                 "background": "#ffffff",
-                "foreground": "#000000",
+                "foreground": "#aaaaaa",
                 "disabled": {
                     "background": "#ffffff",
-                    "foreground": "#000000"
+                    "foreground": "#aaaaaa"
                 },
                 "highlight": "#0000ff"
             },
             "status": {
                 "background": "#ffffff",
-                "foreground": "#000000",
+                "foreground": "#aaaaaa",
                 "disabled": {
                     "background": "#ffffff",
-                    "foreground": "#000000"
+                    "foreground": "#aaaaaa"
                 },
                 "highlight": "#0000ff"
             }
