@@ -1,3 +1,19 @@
+#     A simple image previewer app built using Python-Tkinter.
+#     Copyright (C) 2021  Kumarjit Das | কুমারজিৎ দাস
+#
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+#
+#     You should have received a copy of the GNU General Public License
+#     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import json
 
 
@@ -62,6 +78,9 @@ class Strings:
         self.__set_list_numbers(code)
         self.__set_list_alphabets(code)
         self.__language_code = code
+
+    def get_language(self):
+        return self.__language_code
 
     def get_number(self, number, language_code=''):
         string = str(number)

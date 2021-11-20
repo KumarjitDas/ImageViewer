@@ -1,12 +1,7 @@
 {
-    "list": [
-        [
-            "en-US",
-            "English (US)"
-        ],
-        [
-            "bn-IN",
-            "Bangla (India)"
-        ]
-    ]
+    "default": "en-US",
+    "codes": {
+        "en-US": "English (US)",
+        "bn-IN": "Bengali (India)"
+    }
 }
