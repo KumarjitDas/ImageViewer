@@ -35,6 +35,7 @@ class Languages:
         """Load the system languages from the root path.
 
         ---
+        The path_root sould be full path to the root of this project.
         If the code is an empty string the system default language is set. If
         the language corresponding to the code is not in the loaded languages
         list the default language is set as the system default language and a
@@ -53,35 +54,35 @@ class Languages:
 
         Raises:
         ---
-        ValueError
+        FileNotFoundError and ValueError
         """
         path = path_root + '/' + self.__PATH_LANGUAGES
         with open(file=path, mode='rt', encoding='utf-8') as file:
             dict_languages = json_load(file)
-        self.__dict_codes = dict_languages['codes']
-        for code_name, display_name in self.__dict_codes.items():
-            self.__dict_names[display_name] = code_name
-            self.__names.add(display_name)
-            self.__codes.add(code_name)
-        self.__default_code = dict_languages['default']
-        self.__default_name = self.__dict_codes[self.__default_code]
-        if len(code) == 0:
-            code = self.__default_code
-        else:
-            try:
-                if code not in self.__codes:
-                    raise ValueError(
-                        f"'{code}' is not a valid system language code")
-            except ValueError as e:
-                print(f"ERROR: {e}.",
-                      f"       Valid language codes are: {self.__codes}",
-                      f"       Reverting to default language code, "
-                      f"'{self.__default_code}'.",
-                      sep='\n',
-                      file=sys_stderr)
+            self.__dict_codes = dict_languages['codes']
+            for code_name, display_name in self.__dict_codes.items():
+                self.__dict_names[display_name] = code_name
+                self.__names.add(display_name)
+                self.__codes.add(code_name)
+            self.__default_code = dict_languages['default']
+            self.__default_name = self.__dict_codes[self.__default_code]
+            if len(code) == 0:
                 code = self.__default_code
-        self.__code = code
-        self.__name = self.__dict_codes[code]
+            else:
+                try:
+                    if code not in self.__codes:
+                        raise ValueError(
+                            f"'{code}' is not a valid system language code")
+                except ValueError as e:
+                    print(f"ERROR: {e}.",
+                          f"       Valid language codes are: {self.__codes}",
+                          f"       Reverting to default language code, "
+                          f"'{self.__default_code}'.",
+                          sep='\n',
+                          file=sys_stderr)
+                    code = self.__default_code
+            self.__code = code
+            self.__name = self.__dict_codes[code]
 
     def set_code(self, code=''):
         """Set the default language code.
@@ -268,16 +269,16 @@ class Languages:
 
         Raises:
         ---
-        ValueError
+        FileNotFoundError and ValueError
         """
         with open(file=path_full, mode='rt', encoding='utf-8') as file:
             dict_languages = json_load(file)
-        for code_name, display_name in dict_languages['codes'].items():
-            self.__dict_codes[code_name] = display_name
-            self.__dict_names[display_name] = code_name
-            self.__names.add(display_name)
-            self.__codes.add(code_name)
-        self.set_code(dict_languages.get('default', self.__code))
+            for code_name, display_name in dict_languages['codes'].items():
+                self.__dict_codes[code_name] = display_name
+                self.__dict_names[display_name] = code_name
+                self.__names.add(display_name)
+                self.__codes.add(code_name)
+            self.set_code(dict_languages.get('default', self.__code))
 
     def __str__(self):
         """Evaluates to the default language name and its ISO code"""
