@@ -14,14 +14,15 @@
 #     You should have received a copy of the GNU General Public License
 #     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from languages.languages import Languages
-from strings.strings import Strings
-from themes.themes import Themes
+from imageviewer.languages.languages import Languages
+from imageviewer.strings.strings import Strings
+from imageviewer.themes.themes import Themes
+from imageviewer.settings.settings import Settings
 
 
 def __Main():
     """Main entry point of this program"""
-    print("Hello")
+    print('Hello')
 
 
 if __name__ == "__main__":

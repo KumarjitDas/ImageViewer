@@ -147,6 +147,17 @@ class Themes:
                   file=sys_stderr)
             return self.__theme
 
+    def get_name(self):
+        """Get the name of the default theme.
+
+        ---
+        Returns:
+        ---
+        : str
+            -- name of the default theme
+        """
+        return self.__name
+
     def get_names(self):
         """Get the list of theme names.
 
