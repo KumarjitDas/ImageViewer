@@ -67,11 +67,11 @@ class Themes:
                     raise ValueError(f"'{name}' is not a valid system theme")
             except ValueError as e:
                 print(f"ERROR: {e}.",
-                    f"       Valid themes are: {self.__names}",
-                    f"       Reverting to default theme, "
-                    f"'{self.__default_name}'.",
-                    sep='\n',
-                    file=sys_stderr)
+                      f"       Valid themes are: {self.__names}",
+                      f"       Reverting to default theme, "
+                      f"'{self.__default_name}'.",
+                      sep='\n',
+                      file=sys_stderr)
                 name = self.__default_name
             self.__name = name
             self.__theme = self.__dict_themes[name]
